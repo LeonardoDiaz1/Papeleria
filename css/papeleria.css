@@ -1,0 +1,171 @@
+*{
+    margin: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: rgb(239, 229, 239);
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: purple;
+}
+
+h2{
+    color: azure;
+}
+
+head p{
+    text-align: center;
+}
+
+.p{
+    text-align: center;
+    color: azure;
+}
+
+section div .p{
+    text-align: left;
+}
+
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: purple;
+    font-size: 1.25em;
+    margin-left: 70em;
+}
+
+footer a:hover{
+    text-decoration: dashed;
+    color: violet;
+    cursor: pointer;
+}
+
+#nuestros-productos{
+    padding: 20px 12px;
+}
+
+#nuestros-productos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+#nuestros-productos .carta{
+    padding: 50px;
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-color: purple;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+#nuestros-productos p{
+    color: azure;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+form {
+	width: 200px;
+	height: 40px;
+	margin: 100px auto 0;
+	position: relative;
+}
+
+#submit {
+	display: none;	
+}
+
+form .icon, form .submit {
+	width: 35px;
+	height: 35px;
+	background: purple;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	box-shadow:
+		0px 5px rgb(105, 1, 105),
+		0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+form .submit {
+	background: violet;
+	cursor: pointer;
+	box-shadow:
+		0px 5px rgb(203, 111, 203),
+		0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+form .icon:after, form .submit:after  {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border: 2px solid white;
+	border-radius: 50%;
+	left: 10px;
+	top: 9px;
+}
+
+form .icon:before, form .submit:before {
+	content: '';
+	position: absolute;
+	height: 8px;
+	width: 2px;
+	background: white;
+	transform: rotate(-35deg);
+	top: 19px;
+	left: 21px;
+}
+
+form #search {
+	-webkit-appearance: none;
+	height: 35px;
+	width: 0;
+	position: absolute;
+	padding: 0;
+	opacity: 0;
+	border: none;
+	outline: none;
+	position: absolute;
+	right: 35px;
+	box-shadow:
+		0px 5px #bbb,
+		0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 850px){
+    #nuestros-productos{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-productos p{
+        display: block;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    #nuestros-productos h2{
+        text-align: center;
+    }
+
+    #nuestros-productos .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: purple;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+}
